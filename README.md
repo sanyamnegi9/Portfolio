@@ -1,3 +1,11 @@
+Dependencies
+List the main dependencies your app relies on. For example:
+
+React
+React Router DOM
+SCSS
+Bootstrap
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
