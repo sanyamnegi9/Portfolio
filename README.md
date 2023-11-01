@@ -1,10 +1,7 @@
-Dependencies
-List the main dependencies your app relies on. For example:
-
-React
-React Router DOM
-SCSS
-Bootstrap
+Dependencies:- 
+  * React Router DOM
+  * SCSS
+  * Bootstrap
 
 # Getting Started with Create React App
 
