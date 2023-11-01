@@ -1,0 +1,13 @@
+@import "../../styles/abstracts/variables";
+
+$footer-color: #410e4e;
+
+.footer {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: small;
+  font-weight: 500;
+  color: $footer-color;
+}
