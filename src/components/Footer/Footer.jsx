@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer mt-3">
       <Link to="https://github.com/sanyamnegi9">
         &copy; Copyright - 2023
         <br />

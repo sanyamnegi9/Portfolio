@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import "../abstracts/variables";
+
 a,
 a:visited,
 a:active {
   text-decoration: none;
   color: inherit;
 }
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "crimson text", "serif";
+  color: $text;
+  font-weight: 600;
+}
+

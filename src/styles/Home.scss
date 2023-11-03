@@ -2,9 +2,12 @@
 
 
 
- .main-body {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-
- }
+.main-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 1rem;
+  margin: 1rem 0;
+}

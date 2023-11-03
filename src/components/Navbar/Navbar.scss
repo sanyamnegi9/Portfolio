@@ -1,46 +1,60 @@
 @import "../../styles/abstracts/_variables.scss";
-
+@import "../../styles/base/typography";
 
 nav {
-  background-color: $bg-secondary;
-  background-image: linear-gradient(200deg, $bg-secondary, $active-color);
-  color: white;
-}
-
-.nav-logo {
-  color: white;
-  font-style: italic;
-  font-weight: 600;
-}
-
-.nav-links {
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
-  gap: 1.5rem;
+  background-image: $nav-bg;
+  // backdrop-filter: blur(10px);
+  color: white;
+}
+
+nav .logo {
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+  color: white;
+}
+
+.sidebar {
+  background-color: rgba(97, 31, 144, 0.16);
+  color: white;
+  backdrop-filter: blur(10px);
 }
 
 
-.active {
-  background-color: $active-color;
+// .active {
+//   background-image: $active-nav-bg;
+//   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+// }
+
+.sidebar>div {
+  gap: 1rem;
+  z-index: 1;
+}
+
+.sidebar>div>a {
+  padding: .5rem 1rem;
+  border-radius: 15px;
+}
+
+.sidebar>div>a:not(.active):hover {
+  background-image: $active-nav-bg;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  color: inherit;
 }
 
 
-.nav-links a:not(.active):hover {
-  background-color: $hover-color;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
+@media (max-width: 776px) {
+  .sidebar {
 
-.button {
-  margin: 1rem auto 0 auto;
-  display: flex;
-}
-
-.show {
-  visibility: hidden;
-}
-
-@media (max-width: 575px) {
-  .show {
-    visibility: visible;
+    max-width: 20rem;
   }
+
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    max-width: 15rem;
+  }
+
 }

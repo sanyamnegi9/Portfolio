@@ -1,7 +1,5 @@
 @import "../../styles/abstracts/variables";
 
-$footer-color: #410e4e;
-
 .footer {
   position: relative;
   margin: 0;
@@ -9,5 +7,5 @@ $footer-color: #410e4e;
   text-align: center;
   font-size: small;
   font-weight: 500;
-  color: $footer-color;
+  color: $text;
 }

@@ -1,8 +1,13 @@
 // colors 
-$bg-primary-color: #b8aab8;
-$bg-primary: #A6CFD5;
-$bg-secondary: #611f72;
-$hover-color: #b45fc9;
-$active-color: #9428af;
-$text-color: #7F96FF;
-$footer-color: #410e4e;
+$background: #b8aab8;
+$secondary: #b569ca;
+$primary: #9428af;
+$accent: #611f72;
+$text: #410e4e;
+
+
+// other color's
+$nav-link-hover: linear-gradient(190deg, rgb(173, 136, 173), rgb(177, 115, 177));
+
+$nav-bg: linear-gradient(150deg, $primary, $accent);
+$active-nav-bg: linear-gradient(190deg, $secondary, $primary);
