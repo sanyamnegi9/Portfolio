@@ -1,0 +1,79 @@
+@import "../styles//abstracts/variables";
+
+#home {
+  height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.content {
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content>.hello {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.content>.intro {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.desc{
+  font-size: normal;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.intro>.name {
+  color: $btn-bg
+}
+
+.hire-btn {
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: $btn-bg;
+  color: black;
+  border: none;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem 0 0;
+  margin-top: 2rem;
+  gap: .7rem;
+}
+
+.hire-btn>img {
+  object-fit: cover;
+  height: 1rem;
+  margin: 1rem 0 1rem 2rem;
+}
+
+
+.bg {
+  position: absolute;
+  object-fit: cover;
+  height: 100vh;
+  top: -4rem;
+  right: 0;
+  z-index: -1;
+}
+
+@media (max-width:430px) {
+  .bg{
+    right: -6rem;
+  }
+}

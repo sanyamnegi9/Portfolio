@@ -1,60 +1,67 @@
 @import "../../styles/abstracts/_variables.scss";
 @import "../../styles/base/typography";
 
-nav {
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 500;
-  background-image: $nav-bg;
-  // backdrop-filter: blur(10px);
-  color: white;
+nav{
+  height: 4rem;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0 3rem;
+  z-index: 5;
 }
 
-nav .logo {
-  font-family: 'Cinzel', serif;
-  font-weight: 500;
-  color: white;
+.scrolled{
+  background-color:rgb(90, 90, 90);
 }
 
-.sidebar {
-  background-color: rgba(97, 31, 144, 0.16);
-  color: white;
-  backdrop-filter: blur(10px);
+.logo{
+  object-fit: cover;
+  height: 3rem;
+}
+
+.nav-items{
+  position: relative;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-items > a{
+  padding: .7rem 1rem;
+}
+
+.nav-items > a:hover{
+  color: cyan;
+  padding-bottom: .5rem;
+  border-bottom: 2px solid cyan;
+}
+
+.contact-btn{
+  background-color: $btn-bg;
+  color: black;
+  border: none;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem 0 0;
+  gap: .7rem;
+  font-weight: 700;
+}
+
+.contact-img{
+  object-fit: cover;
+  height: 1rem;
+  margin: 1rem 0 1rem 1rem;
 }
 
 
-// .active {
-//   background-image: $active-nav-bg;
-//   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-// }
-
-.sidebar>div {
-  gap: 1rem;
-  z-index: 1;
-}
-
-.sidebar>div>a {
-  padding: .5rem 1rem;
-  border-radius: 15px;
-}
-
-.sidebar>div>a:not(.active):hover {
-  background-image: $active-nav-bg;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  color: inherit;
-}
-
-
-@media (max-width: 776px) {
-  .sidebar {
-
-    max-width: 20rem;
+@media (max-width:768px) {
+  .nav-items{
+    display: none;
   }
-
-}
-
-@media (max-width: 576px) {
-  .sidebar {
-    max-width: 15rem;
-  }
-
+  
 }

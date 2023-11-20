@@ -1,14 +1,33 @@
-import React from 'react'
+import React from "react";
+import "../styles/Header.scss";
+import bg from "../assets/image.png";
+import hireBtn from "../assets/hireme.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div id="Home">
-      <h2>Header</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tempora veritatis cumque veniam repudiandae animi, delectus libero aperiam numquam, suscipit nisi reiciendis odio et at alias aliquam unde? Veniam est sunt velit porro officiis dicta dolores voluptas consectetur vel in tempore, aliquam praesentium mollitia repellendus voluptates? Sit animi quasi facilis excepturi ducimus, necessitatibus enim pariatur omnis dignissimos quos odio aliquam sunt saepe quo laudantium sapiente ad mollitia distinctio dolor, eaque vitae natus qui? Fugit quia eum aliquid vitae officiis dolores eos molestias placeat, aspernatur aperiam facere velit dignissimos dolore accusamus tempore illo quod inventore exercitationem perferendis atque minima. Tempore, at nihil explicabo nostrum sunt numquam cupiditate nobis ipsum velit aperiam aut quae animi laborum facere tempora ea mollitia sit excepturi unde dolore illo eveniet. Quod ab, ea ipsum veniam asperiores iste porro ex. Unde, error modi vel excepturi consectetur hic soluta a voluptate asperiores voluptatum laborum repellat beatae distinctio quo aliquid mollitia voluptatem perferendis sed assumenda quisquam quasi harum cupiditate expedita ea. Sed provident quos quis, delectus possimus voluptatum omnis. Amet dignissimos deleniti, voluptatum iste temporibus quia consequatur iusto repellendus tempore nemo! Pariatur unde voluptatibus at laboriosam minima odio ipsum architecto. Neque minus fugiat temporibus facilis eveniet, impedit optio quis corporis aliquam vitae qui at explicabo quibusdam officiis excepturi, consequuntur aperiam nisi consequatur natus soluta voluptate? Dolor quos consequatur earum vitae nisi molestiae, eum, rem est magnam necessitatibus odit! Quod itaque molestiae quos nesciunt ullam, fugit similique dignissimos quo, fugiat sint, corrupti vitae quisquam. Harum, eius maiores quis eos vel illo aliquam? Ipsum aperiam animi soluta consequuntur dolor, perspiciatis ex odio quas recusandae dolorum aspernatur. Molestias quis similique totam, nulla tempora cupiditate laudantium assumenda excepturi inventore, quidem earum delectus odio, dignissimos architecto blanditiis consequuntur dolorem aliquid quisquam fuga magni impedit aliquam! Nesciunt dolore deserunt libero eum maiores in, laborum debitis est quia facilis eos autem ut similique sequi incidunt aliquam porro itaque quam odit optio ipsa? Ducimus qui facilis ut consectetur voluptas at ad veritatis? Temporibus, sed ad porro illum rerum sunt aliquid voluptas perspiciatis pariatur ducimus distinctio voluptatibus adipisci a eos dolor obcaecati blanditiis quod libero fuga omnis quibusdam, mollitia, recusandae aut asperiores. Quasi ab, assumenda autem ipsa dignissimos commodi eum minima voluptatum blanditiis cumque voluptate delectus, modi corporis quisquam dicta officiis voluptatibus? Sequi deleniti assumenda laboriosam ipsa nesciunt amet, rem accusamus molestias officiis tempore cupiditate quidem necessitatibus quisquam molestiae ut fugit odio, ea exercitationem, numquam eaque temporibus facere error adipisci? Provident tempora nihil pariatur nemo aperiam? Veritatis culpa id voluptatum aut, dolore a modi laudantium vero molestiae corporis velit sed. Illum ullam enim provident eligendi eaque in quasi fugit, sequi consequuntur repudiandae? Cupiditate inventore tempora corrupti. Explicabo fuga quas unde molestiae pariatur, harum ratione illo illum enim nobis at officia reiciendis accusamus quos impedit natus sit rerum qui animi id eaque aut quisquam laudantium. Adipisci sunt quos labore provident doloremque praesentium laboriosam culpa nesciunt repellendus enim cumque, voluptatum hic ut. Iure dicta esse temporibus, dolor, a cumque fugiat illo rerum, aliquam est tempora. Quam animi veniam odit magnam?
-      </p>
+    <div id="home">
+      <div className="content">
+        <span className="hello">Hello,</span>
+        <span className="intro">
+          I'm <span className="name">Sanyam</span>
+          <br />
+          Web Developer
+        </span>
+        <p className="desc">
+          I am a skilled and passionate web developer with experience in
+          creating <br /> visually appealing and user friendly websites.
+        </p>
+        <Link>
+          <button className="hire-btn">
+            <img src={hireBtn} alt="hire" />
+            Hire me
+          </button>
+        </Link>
+      </div>
+      <img src={bg} alt="profile" className="bg" />
     </div>
   );
-}
+};
 
-export default Header
+export default Header;

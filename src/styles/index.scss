@@ -1,10 +1,10 @@
 @import url(base/_resets.scss);
 @import url(base/_typography.scss);
-$scrollbar-color: #84269ba8;
+$scrollbar-color: #444144a8;
 
 /* ===== Scrollbar CSS ===== */
 *::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
   height: 8px;
 }
 
@@ -14,7 +14,7 @@ $scrollbar-color: #84269ba8;
 
 *::-webkit-scrollbar-thumb {
   background-color: $scrollbar-color;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 // ===================
 
