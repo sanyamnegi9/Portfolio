@@ -1,3 +1,4 @@
+
 #skills {
   overflow: hidden;
   width: 100vw;
@@ -12,15 +13,13 @@
   padding: 2rem 0;
 }
 
-.skill-title {
-  font-size: 3rem;
-  font-weight: 600;
-}
-
 .skill-desc {
   font-size: 1rem;
   padding: 1rem 0;
-  max-width: 60rem;
+  max-width: 90%;
+  letter-spacing: .4px;
+  word-spacing: .8px;
+  line-height: 1.5rem;
 }
 
 .skills-container {
@@ -44,6 +43,12 @@
 
 .skill-card-img {
   height: 4rem;
+}
+
+.skill-card-desc > p{
+  letter-spacing: .18px;
+  word-spacing: .5px;
+  padding: .4rem 0;
 }
 
 @media (max-width:440px) {

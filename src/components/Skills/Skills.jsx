@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Skill.scss"
+import "./Skills.scss"
 import SkillCard from "./SkillCard";
 import UiDesign from "../../assets/ui-design.png";
 import WebDesign from "../../assets/website-design.png";
@@ -7,10 +7,10 @@ import AppDesign from "../../assets/app-design.png";
 
 
 
-const Skill = () => {
+const Skills = () => {
   return (
     <div id="skills">
-      <span className="skill-title">What I do</span>
+      <h2 className="skill-title">What I do</h2>
       <p className="skill-desc">
         I am a skilled and passionate web developer with experience in making
         user friendly and responsive web apps.
@@ -37,4 +37,4 @@ const Skill = () => {
   );
 }
 
-export default Skill
+export default Skills
