@@ -25,12 +25,12 @@ const Skill = () => {
         <SkillCard
           img={WebDesign}
           title="Website Design"
-          desc="This is a demo text, you can write your own content here"
+          desc="This is a demo text, you can write your own content here. This is a demo text, you can write your own content here."
         />
         <SkillCard
           img={AppDesign}
           title="App Design"
-          desc="This is a demo text, you can write your own content here"
+          desc="This is a demo text, you can write your own content here. This is a demo text,"
         />
       </div>
     </div>
