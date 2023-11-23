@@ -1,0 +1,62 @@
+#contact {
+  overflow: hidden;
+  min-height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.contact-desc{
+  width:80%;
+}
+
+.contact-form {
+  width: 85vw;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.contact-input {
+  background-color: rgb(40, 40, 40);
+  color: white;
+  width: 100%;
+  max-width: 40rem;
+  border: none;
+  border-radius: .5rem;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 3rem;
+  padding: 1rem 3rem;
+  margin: 1rem;
+  border-radius: .5rem;
+  border: none;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.links>img {
+  object-fit: cover;
+  height: 3rem;
+}

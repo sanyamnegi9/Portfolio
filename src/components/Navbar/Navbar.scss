@@ -1,7 +1,7 @@
 @import "../../styles/abstracts/_variables.scss";
 @import "../../styles/base/typography";
 
-nav{
+nav {
   height: 4rem;
   width: 100vw;
   position: sticky;
@@ -14,32 +14,39 @@ nav{
   z-index: 5;
 }
 
-.scrolled{
-  background-color:rgb(40, 40, 40);
+.scrolled {
+  background-color: rgb(40, 40, 40);
 }
 
-.logo{
+.logo {
   object-fit: cover;
   height: 3rem;
 }
 
-.nav-items{
+.nav-items {
   position: relative;
   display: flex;
   gap: 2rem;
 }
 
-.nav-items > a{
+.nav-items>a {
   padding: .7rem 1rem;
 }
 
-.nav-items > a:hover{
-  color: cyan;
+.nav-items>a:not(.active):hover {
+  color: $btn-bg;
   padding-bottom: .5rem;
-  border-bottom: 2px solid cyan;
+  border-bottom: 2px solid $btn-bg;
+  cursor: pointer;
 }
 
-.contact-btn{
+.active {
+  color: $btn-bg;
+  border-bottom: 2px solid $btn-bg;
+    cursor: pointer;
+}
+
+.contact-btn {
   background-color: $btn-bg;
   color: black;
   border: none;
@@ -52,16 +59,58 @@ nav{
   font-weight: 700;
 }
 
-.contact-img{
+.contact-btn:hover {
+  cursor: pointer;
+}
+
+.contact-img {
   object-fit: cover;
   height: 1rem;
   margin: 1rem 0 1rem 1rem;
 }
 
+.mobile-menu{
+  display: none;
+  height: 1.2rem;
+}
+
+.mobile-nav-items {
+  background-color: rgb(40, 40, 40);
+  min-width: 15rem;
+  height: fit-content;
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: .5rem;
+  gap: 1rem;
+  z-index: 5;
+}
+
+.mobile-nav-items>a {
+  width: 100%;
+  color: white;
+  padding: 0.5rem 3rem;
+  margin: .25rem;
+  text-align: center;
+}
+
+.mobile-nav-items>a:not(.active):hover {
+  background-color: rgb(30, 30, 30);
+  color: $btn-bg;
+  border-bottom: 2px solid $btn-bg;
+  cursor: pointer;
+
+}
+
 
 @media (max-width:768px) {
-  .nav-items{
+  .mobile-menu{
+    display: flex;
+  }
+  .nav-items, .contact-btn{
     display: none;
   }
-  
 }
