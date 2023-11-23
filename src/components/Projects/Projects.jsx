@@ -10,9 +10,9 @@ import portfolio6 from "../../assets/portfolio-6.png"
 
 const Projects = () => {
   return (
-    <div id="projects">
-      <h2 className="project-title">Projects</h2>
-      <p className="project-desc">
+    <div id="projects" className="container">
+      <h2>Projects</h2>
+      <p className="desc">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo commodi,
         sed libero nisi deleniti mollitia at neque aliquid consequatur assumenda
         autem nobis ut dolores error, amet soluta inventore velit, omnis ratione
@@ -27,7 +27,7 @@ const Projects = () => {
         <ProjectCard img={portfolio5} link={"/"} />
         <ProjectCard img={portfolio6} link={"/"} />
       </div>
-      <button className="more-btn">See more</button>
+      <button className="white-btn">See more</button>
     </div>
   );
 };

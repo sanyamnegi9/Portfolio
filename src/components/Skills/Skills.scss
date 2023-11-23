@@ -1,31 +1,10 @@
+@import "../styles//abstracts/variables";
 
-#skills {
-  overflow: hidden;
-  width: 100vw;
-  max-width: 75rem;
-  margin: 2rem auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 1rem;
-  padding: 2rem 0;
-}
 
-.skill-desc {
-  font-size: 1rem;
-  padding: 1rem 0;
-  max-width: 90%;
-  letter-spacing: .4px;
-  word-spacing: .8px;
-  line-height: 1.5rem;
-}
 
 .skills-container {
-  width: 100vw;
-  max-width: 80%;
-  text-align: center;
+  width: 90vw;
+  max-width: 60rem;
 }
 
 // Skill Card CSS
@@ -42,13 +21,14 @@
 }
 
 .skill-card-img {
-  height: 4rem;
+  height: 4.2rem;
 }
 
-.skill-card-desc > p{
-  letter-spacing: .18px;
-  word-spacing: .5px;
-  padding: .4rem 0;
+
+.skill-card-desc{
+display: flex;
+flex-direction: column;
+gap: .5rem;
 }
 
 @media (max-width:440px) {

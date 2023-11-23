@@ -14,12 +14,12 @@ const Header = () => {
           <br />
           Web Developer
         </span>
-        <p className="desc">
+        <p className="header-desc">
           I am a skilled and passionate web developer with experience in
-          creating <br /> visually appealing and user friendly websites.
+          creating visually appealing and user friendly websites.
         </p>
         <Link>
-          <button className="hire-btn">
+          <button className="btn hire-btn">
             <img src={hireBtn} alt="hire" />
             Hire me
           </button>

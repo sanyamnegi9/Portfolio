@@ -22,19 +22,22 @@
 }
 
 .content>.hello {
+  font-family: "crimson text", "serif";
   font-size: 1.5rem;
   font-weight: 500;
 }
 
 .content>.intro {
+  font-family: 'Nunito', sans-serif;
   font-size: 3rem;
   font-weight: 700;
 }
 
-.desc {
+.header-desc {
+  width: 100%;
+  max-width: 35rem;
   font-size: normal;
   font-weight: 300;
-  letter-spacing: 1px;
 }
 
 .intro>.name {
@@ -42,18 +45,8 @@
 }
 
 .hire-btn {
-  font-size: 1rem;
-  font-weight: 600;
-  background-color: $btn-bg;
-  color: black;
-  border: none;
-  border-radius: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 2rem 0 0;
   margin-top: 2rem;
-  gap: .7rem;
+  padding: 0 2rem 0 0;
 }
 
 .hire-btn>img {
@@ -85,7 +78,7 @@
     font-size: 2.2rem;
   }
 
-    .desc {
-      font-size: .8rem;
-    }
+  .desc {
+    font-size: .8rem;
+  }
 }

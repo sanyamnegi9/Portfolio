@@ -1,5 +1,5 @@
 @import "../../styles/abstracts/_variables.scss";
-@import "../../styles/base/typography";
+
 
 nav {
   height: 4rem;
@@ -46,27 +46,14 @@ nav {
     cursor: pointer;
 }
 
-.contact-btn {
-  background-color: $btn-bg;
-  color: black;
-  border: none;
-  border-radius: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 1rem 0 0;
-  gap: .7rem;
-  font-weight: 700;
+.contact-btn{
+  padding: 0 1.2rem 0 0;
 }
 
-.contact-btn:hover {
-  cursor: pointer;
-}
-
-.contact-img {
+.contact-btn > img {
   object-fit: cover;
   height: 1rem;
-  margin: 1rem 0 1rem 1rem;
+  margin: 1rem 0 1rem 1.2rem;
 }
 
 .mobile-menu{
@@ -106,7 +93,7 @@ nav {
 }
 
 
-@media (max-width:768px) {
+@media (max-width:780px) {
   .mobile-menu{
     display: flex;
   }

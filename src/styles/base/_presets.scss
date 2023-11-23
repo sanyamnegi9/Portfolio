@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import "../abstracts/variables";
+
+a,
+a:visited,
+a:active {
+  font-family: "crimson text", "serif";
+  color: inherit;
+}
+
+
+button {
+  font-family: 'Nunito', sans-serif;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "crimson text", "serif";
+
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: $btn-bg;
+}
+
+p {
+  font-family: 'Nunito', sans-serif;
+  font-size: .9rem;
+}
+
+// ----------------------------------
+
+.container {
+  width: 100vw;
+  max-width: 75rem;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.desc {
+  width: 90vw;
+  max-width: 65rem;
+  padding: .5rem 0;
+  font-size: 1rem;
+}

@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div id="contact">
       <h2>Contact</h2>
-      <p className="contact-desc">
+      <p className="desc">
         Please fill out the form below to discuss any work opportunities.
       </p>
       <form className="contact-form">
@@ -29,7 +29,7 @@ const Contact = () => {
           rows="5"
           placeholder="Your Message"
         ></textarea>
-        <button className="submit-btn" type="submit" value="Send">
+        <button className="white-btn submit-btn" type="submit" value="Send">
           Submit
         </button>
         <div className="links">

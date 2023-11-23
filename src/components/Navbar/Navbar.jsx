@@ -74,14 +74,14 @@ const Navbar = () => {
         </Link>
       </div>
       <button
-        className="contact-btn"
+        className="btn contact-btn"
         onClick={() =>
           document
             .getElementById("contact")
             .scrollIntoView({ behavior: "smooth" })
         }
       >
-        <img src={contactBtnIcon} alt="" className="contact-img" />
+        <img src={contactBtnIcon} alt=""/>
         Contact Me
       </button>
 

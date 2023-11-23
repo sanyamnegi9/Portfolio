@@ -9,9 +9,9 @@ import AppDesign from "../../assets/app-design.png";
 
 const Skills = () => {
   return (
-    <div id="skills">
-      <h2 className="skill-title">What I do</h2>
-      <p className="skill-desc">
+    <div id="skills" className='container'>
+      <h2>What I do</h2>
+      <p className="desc">
         I am a skilled and passionate web developer with experience in making
         user friendly and responsive web apps.
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas veritatis, itaque labore non unde accusantium sit, adipisci illo consectetur quia, repudiandae neque! Harum reprehenderit voluptatibus sunt eum. Saepe eveniet nulla, enim fugit ex ut quaerat explicabo officia vel harum repudiandae rem in modi quis maiores ipsam! Laboriosam in quas voluptatum.
