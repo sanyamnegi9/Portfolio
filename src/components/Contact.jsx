@@ -1,9 +1,7 @@
 import React from "react";
 import "../styles/Contact.scss";
-import FacebookIcon from "../assets/facebook-icon.png";
-import InstaIcon from "../assets/instagram.png";
-import TwitterIcon from "../assets/twitter.png";
-import YoutubeIcon from "../assets/youtube.png";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Contact = () => {
   return (
@@ -33,10 +31,8 @@ const Contact = () => {
           Submit
         </button>
         <div className="links">
-          <img src={FacebookIcon} alt="SocialLinks" className="link" />
-          <img src={TwitterIcon} alt="SocialLinks" className="link" />
-          <img src={InstaIcon} alt="SocialLinks" className="link" />
-          <img src={YoutubeIcon} alt="SocialLinks" className="link" />
+          <FontAwesomeIcon icon={faGithub} size="2xl"  className="link"/>
+          <FontAwesomeIcon icon={faLinkedin} size="2xl" className="link"/>
         </div>
       </form>
     </div>

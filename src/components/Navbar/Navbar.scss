@@ -3,7 +3,7 @@
 
 nav {
   height: 4rem;
-  width: 100vw;
+  width: 100%;
   position: sticky;
   top: 0;
   display: flex;
@@ -19,8 +19,10 @@ nav {
 }
 
 .logo {
-  object-fit: cover;
-  height: 3rem;
+  font-size: 1.8rem;
+  letter-spacing: 2.5px;
+  color: $btn-bg;
+  cursor: pointer;
 }
 
 .nav-items {
@@ -43,23 +45,26 @@ nav {
 .active {
   color: $btn-bg;
   border-bottom: 2px solid $btn-bg;
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.contact-btn{
+.contact-btn {
   padding: 0 1.2rem 0 0;
 }
 
-.contact-btn > img {
+.contact-btn>img,
+.contact-btn>.icon {
   object-fit: cover;
   height: 1rem;
   margin: 1rem 0 1rem 1.2rem;
 }
 
-.mobile-menu{
+.mobile-menu {
   display: none;
-  height: 1.2rem;
+  height: 1.9rem;
+  cursor: pointer;
 }
+
 
 .mobile-nav-items {
   background-color: rgb(40, 40, 40);
@@ -94,10 +99,15 @@ nav {
 
 
 @media (max-width:780px) {
-  .mobile-menu{
+  nav{
+    padding: 0 1.5rem;
+  }
+  .mobile-menu {
     display: flex;
   }
-  .nav-items, .contact-btn{
+
+  .nav-items,
+  .contact-btn {
     display: none;
   }
 }

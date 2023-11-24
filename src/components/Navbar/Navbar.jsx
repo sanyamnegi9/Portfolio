@@ -1,9 +1,11 @@
 import "./Navbar.scss";
 import React, { useEffect, useState } from "react";
 import logo from "../../assets/logo.png";
-import contactBtnIcon from "../../assets/contact.png";
 import menu from "../../assets/menu.png";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFile } from "@fortawesome/free-regular-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -28,10 +30,10 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
-      <img src={logo} alt="logo" className="logo" />
-      <div
-        className="nav-items"
-      >
+      <Link to="/">
+        <h1 className="logo">Sanyam Negi</h1>
+      </Link>
+      <div className="nav-items">
         <Link
           activeClass="active"
           spy={true}
@@ -81,19 +83,32 @@ const Navbar = () => {
             .scrollIntoView({ behavior: "smooth" })
         }
       >
-        <img src={contactBtnIcon} alt=""/>
-        Contact Me
+        <FontAwesomeIcon icon={faFile} className="icon" />
+        {/* <img src={contactBtnIcon} alt="" /> */}
+        Resume
       </button>
 
       {/* mobile burger menu */}
-      <img
-        src={menu}
-        alt="Menu"
-        className="mobile-menu"
-        onClick={() => {
-          setShowMenu(!showMenu);
-        }}
-      />
+      {showMenu ? (
+        <FontAwesomeIcon
+          icon={faXmark}
+          style={{ color: "#f1f10e" }}
+          className="mobile-menu"
+          onClick={() => {
+            setShowMenu(!showMenu);
+          }}
+        />
+      ) : (
+        <FontAwesomeIcon
+          icon={faBars}
+          style={{ color: "#f1f10e" }}
+          className="mobile-menu"
+          onClick={() => {
+            setShowMenu(!showMenu);
+          }}
+        />
+      )}
+
       <div
         className="mobile-nav-items"
         style={{ display: showMenu ? "flex" : "none" }}

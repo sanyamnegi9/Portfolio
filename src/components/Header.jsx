@@ -1,8 +1,9 @@
 import React from "react";
 import "../styles/Header.scss";
-import bg from "../assets/image.png";
-import hireBtn from "../assets/hireme.png";
+import modelImg from "../assets/model.png";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
@@ -20,12 +21,12 @@ const Header = () => {
         </p>
         <Link>
           <button className="btn hire-btn">
-            <img src={hireBtn} alt="hire" />
+            <FontAwesomeIcon icon={faBriefcase} className="hire-img"/>
             Hire me
           </button>
         </Link>
       </div>
-      <img src={bg} alt="profile" className="bg" />
+      <img src={modelImg} alt="profile" className="model-img" />
     </div>
   );
 };
