@@ -3,9 +3,12 @@ import { Link } from 'react-router-dom'
 
 const ProjectCard = ({img, link}) => {
   return (
-    <Link to={link}>
-      <img src={img} alt="projectImage" className="product-img" />
-    </Link>
+    <div className="project-container">
+      <img src={img} alt="project" className='project-img'/>
+      <div className='project-details'>
+
+      </div>
+    </div>
   );
 }
 

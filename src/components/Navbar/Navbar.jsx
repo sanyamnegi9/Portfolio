@@ -1,8 +1,6 @@
 import "./Navbar.scss";
 import React, { useEffect, useState } from "react";
-import logo from "../../assets/logo.png";
-import menu from "../../assets/menu.png";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFile } from "@fortawesome/free-regular-svg-icons";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -50,7 +48,7 @@ const Navbar = () => {
           smooth={true}
           offset={-70}
           duration={500}
-          to="skills"
+          to="about"
         >
           About
         </Link>

@@ -16,12 +16,12 @@ const Header = () => {
           Web Developer
         </span>
         <p className="header-desc">
-          I am a skilled and passionate web developer with experience in
-          creating visually appealing and user friendly websites.
+          Aspiring React developer with a passion for crafting dynamic and
+          user-centric interfaces. Eager to learn and contribute to projects
         </p>
         <Link>
           <button className="btn hire-btn">
-            <FontAwesomeIcon icon={faBriefcase} className="hire-img"/>
+            <FontAwesomeIcon icon={faBriefcase} className="hire-img" />
             Hire me
           </button>
         </Link>
