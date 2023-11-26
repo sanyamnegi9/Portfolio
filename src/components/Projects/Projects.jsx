@@ -1,20 +1,34 @@
 import React from "react";
 import "./Projects.scss";
 import ProjectCard from "./ProjectCard";
-import portfolio1 from "../../assets/portfolio-1.png"
-import project1Img from "../../assets/Projects/project1.png";
+import { projectsData } from "../../data";
 
 const Projects = () => {
   return (
     <div id="projects" className="container">
       <h2>Projects</h2>
       <p className="desc">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Dive into my projects! From interactive web apps to user-friendly
+        designs, each one reflects my passion for ReactJS and frontend
+        development. Check them out and see how I blend creativity with
+        technical know-how to bring ideas to life.
       </p>
       <div className="projects-container">
-        <ProjectCard img={project1Img} />
+        {projectsData.map(
+          ({ id, projectName, img, desc, activeLink, repoLink }, index) => (
+            <ProjectCard
+              id={id}
+              projectName={projectName}
+              img={img}
+              desc={desc}
+              activeLink={activeLink}
+              repoLink={repoLink}
+              index={index}
+            />
+          )
+        )}
       </div>
-      <button className="white-btn">See more</button>
+      {/* <button className="white-btn">See more</button> */}
     </div>
   );
 };
