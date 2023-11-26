@@ -9,12 +9,12 @@ const Header = () => {
   return (
     <div id="home">
       <div className="content">
-        <span className="hello">Hello,</span>
-        <span className="intro">
+        <p className="hello">Hello,</p>
+        <p className="intro">
           I'm <span className="name">Sanyam</span>
           <br />
           Web Developer
-        </span>
+        </p>
         <p className="header-desc">
           Aspiring React developer with a passion for crafting dynamic and
           user-centric interfaces. Eager to learn and contribute to projects

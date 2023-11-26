@@ -2,7 +2,7 @@
 
 #home {
   height: calc(100vh - 4rem);
-  width: 100vw;
+  width: 100%;
   max-width: 75rem;
   margin: 0 auto;
   position: relative;
@@ -14,7 +14,7 @@
 
 .content {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -34,7 +34,7 @@
 }
 
 .header-desc {
-  width: 100%;
+  width: 90%;
   max-width: 35rem;
   font-size: normal;
   font-weight: 300;
@@ -60,7 +60,8 @@
   height: calc(100vh - 4rem);
   position: absolute;
   object-fit: cover;
-  right: -5rem;
+  top: 0;
+  right: 0;
   z-index: -1;
 }
 
@@ -69,11 +70,26 @@
     font-size: 1.2rem;
   }
 
+  .model-img{
+    right: -5vw;
+  }
   .content>.intro {
     font-size: 2.2rem;
   }
 
   .desc {
     font-size: .8rem;
+  }
+}
+
+@media (max-width:380px) {
+  .hello{
+    font-size: 5vw;
+  }
+  .intro{
+    font-size: 8vw;
+  }
+  .header-desc{
+    font-size: 4.2vw;
   }
 }

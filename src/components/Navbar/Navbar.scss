@@ -111,3 +111,16 @@ nav {
     display: none;
   }
 }
+
+@media (max-width:380px) {
+  .logo{
+    font-size: 6.5vw;
+  }
+  .mobile-menu{
+    height: 7vw;
+  }
+
+  nav{
+    padding: 0 1rem;
+  }
+}

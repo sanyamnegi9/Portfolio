@@ -36,7 +36,7 @@ const Navbar = () => {
           activeClass="active"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-60}
           duration={500}
           to="home"
         >
@@ -46,7 +46,7 @@ const Navbar = () => {
           activeClass="active"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-60}
           duration={500}
           to="about"
         >
@@ -56,7 +56,7 @@ const Navbar = () => {
           activeClass="active"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-60}
           duration={500}
           to="projects"
         >
@@ -66,7 +66,7 @@ const Navbar = () => {
           activeClass="active"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-60}
           duration={500}
           to="contact"
         >
@@ -115,7 +115,7 @@ const Navbar = () => {
           activeClass="active"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-60}
           duration={500}
           to="home"
           onClick={() => {
@@ -128,9 +128,9 @@ const Navbar = () => {
           activeClass="active"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-60}
           duration={500}
-          to="skills"
+          to="about"
           onClick={() => {
             setShowMenu(false);
           }}
@@ -141,7 +141,7 @@ const Navbar = () => {
           activeClass="active"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-60}
           duration={500}
           to="projects"
           onClick={() => {
@@ -154,7 +154,7 @@ const Navbar = () => {
           activeClass="active"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-60}
           duration={500}
           to="contact"
           onClick={() => {
