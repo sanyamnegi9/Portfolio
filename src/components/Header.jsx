@@ -19,12 +19,15 @@ const Header = () => {
           Aspiring React developer with a passion for crafting dynamic and
           user-centric interfaces. Eager to learn and contribute to projects
         </p>
-        <Link>
-          <button className="btn hire-btn">
-            <FontAwesomeIcon icon={faBriefcase} className="hire-img" />
-            Hire me
-          </button>
-        </Link>
+        <button
+          className="btn hire-btn"
+          onClick={() =>
+            window.open("https://www.linkedin.com/in/sanyamnegi/", "_blank")
+          }
+        >
+          <FontAwesomeIcon icon={faBriefcase} className="hire-img" />
+          Hire me
+        </button>
       </div>
       <img src={modelImg} alt="profile" className="model-img" />
     </div>

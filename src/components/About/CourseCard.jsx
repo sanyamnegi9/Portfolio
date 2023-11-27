@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import { faArrowUpRightFromSquare, faCertificate } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -22,11 +22,11 @@ const CourseCard = ({
         <h3 className="course-title">{title}</h3>
         <p className="course-skill">{skills}</p>
         <div className="course-links">
-          <Link to={credentialUrl}>
-            <FontAwesomeIcon icon={faArrowUpRightFromSquare} size="lg" />
+          <Link to={certificate} target="_blank">
+            <FontAwesomeIcon icon={faCertificate} size="lg" />
           </Link>
-          <Link>
-            <FontAwesomeIcon icon={faCertificate}  size="lg"/>
+          <Link to={credentialUrl} target="_blank">
+            <FontAwesomeIcon icon={faArrowUpRightFromSquare} size="lg" />
           </Link>
         </div>
       </div>

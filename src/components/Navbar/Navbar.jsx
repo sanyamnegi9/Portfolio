@@ -1,9 +1,13 @@
 import "./Navbar.scss";
 import React, { useEffect, useState } from "react";
+import {NavItems} from "../../data";
 import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFile } from "@fortawesome/free-regular-svg-icons";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import cvImg from "../../assets/cv.jpg";
+
+
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -32,57 +36,27 @@ const Navbar = () => {
         <h1 className="logo">Sanyam Negi</h1>
       </Link>
       <div className="nav-items">
-        <Link
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-60}
-          duration={500}
-          to="home"
-        >
-          Home
-        </Link>
-        <Link
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-60}
-          duration={500}
-          to="about"
-        >
-          About
-        </Link>
-        <Link
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-60}
-          duration={500}
-          to="projects"
-        >
-          Portfolio
-        </Link>
-        <Link
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-60}
-          duration={500}
-          to="contact"
-        >
-          Contact
-        </Link>
+        {NavItems.map(({item, secLink}) => (
+          <Link
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={500}
+            to={secLink}
+          >
+            {item}
+          </Link>
+          
+        ))}
       </div>
+
+      {/* Resume Button */}
       <button
         className="btn contact-btn"
-        onClick={() =>
-          document
-            .getElementById("contact")
-            .scrollIntoView({ behavior: "smooth" })
-        }
+        onClick={()=>{window.open(cvImg, "_blank");}}
       >
         <FontAwesomeIcon icon={faFile} className="icon" />
-        {/* <img src={contactBtnIcon} alt="" /> */}
         Resume
       </button>
 
@@ -107,62 +81,26 @@ const Navbar = () => {
         />
       )}
 
+      {/* mobile Nav Items */}
       <div
         className="mobile-nav-items"
         style={{ display: showMenu ? "flex" : "none" }}
       >
-        <Link
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-60}
-          duration={500}
-          to="home"
-          onClick={() => {
-            setShowMenu(false);
-          }}
-        >
-          Home
-        </Link>
-        <Link
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-60}
-          duration={500}
-          to="about"
-          onClick={() => {
-            setShowMenu(false);
-          }}
-        >
-          About
-        </Link>
-        <Link
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-60}
-          duration={500}
-          to="projects"
-          onClick={() => {
-            setShowMenu(false);
-          }}
-        >
-          Portfolio
-        </Link>
-        <Link
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-60}
-          duration={500}
-          to="contact"
-          onClick={() => {
-            setShowMenu(false);
-          }}
-        >
-          Contact
-        </Link>
+        {NavItems.map(({item,secLink}) => (
+          <Link
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={500}
+            to={secLink}
+            onClick={() => {
+              setShowMenu(false);
+            }}
+          >
+            {item}
+          </Link>
+        ))}
       </div>
     </nav>
   );

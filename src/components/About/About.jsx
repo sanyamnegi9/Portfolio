@@ -1,9 +1,6 @@
 import React from "react";
 import "./About.scss";
 import CourseCard from "./CourseCard";
-import UiDesign from "../../assets/ui-design.png";
-import WebDesign from "../../assets/website-design.png";
-import AppDesign from "../../assets/app-design.png";
 import SkillCard from "./SkillCard";
 import { skillsData, coursesData } from "../../data";
 
@@ -21,6 +18,11 @@ const About = () => {
 
       {/* Courses Section */}
       <h4>Courses</h4>
+      <p className="desc sec-desc">
+        Explore my course journey: ReactJS, Responsive Web Design, Frontend
+        Development. Witness my commitment to continuous learning and skill
+        refinement.
+      </p>
       <div className="courses-container">
         {coursesData.map(
           ({

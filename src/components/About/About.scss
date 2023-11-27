@@ -17,9 +17,15 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
 }
 
 // courses card css
+
+.sec-desc {
+  margin-top: -1rem;
+  max-width: 50rem;
+}
 
 .course-card {
   background-color: rgb(50, 50, 50);
@@ -86,30 +92,70 @@
 // Skill Card CSS
 
 .skill-card-container {
+  width: 7rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  padding: .5rem 1rem;
-  margin: 1rem;
 }
 
 .skill-card-container>img {
   object-fit: cover;
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
 }
+
+.skill-card-container>h5 {
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+
+@media (max-width:695px) {
+
+  .skill-card-container {
+    width: 5rem;
+  }
+
+  .skill-card-container>img {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .skill-card-container>h5 {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width:515px) {
+  .skill-card-container {
+    width: 4.9rem;
+    gap: .5rem;
+  }
+
+  .skill-card-container>img {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .skill-card-container>h5 {
+    font-size: .6.5rem;
+  }
+}
+
 
 @media (max-width:440px) {
   .skill-card {
     padding: 1rem;
   }
 
-  .organization-container{
+  .organization-container {
     width: 8rem;
   }
-  .course-card-img{
+
+  .course-card-img {
     height: 3.5rem;
   }
 

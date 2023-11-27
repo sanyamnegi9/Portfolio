@@ -26,10 +26,10 @@ const ProjectCard = ({
         <p className="project-desc ">{desc}</p>
         <p className="project-skills">{skills}</p>
         <div className="project-links">
-          <Link to={repoLink}>
+          <Link to={repoLink} target="_blank">
             <FontAwesomeIcon icon={faGithub} size="lg" />
           </Link>
-          <Link to={activeLink}>
+          <Link to={activeLink} target="_blank">
             <FontAwesomeIcon icon={faArrowUpRightFromSquare} size="lg" />
           </Link>
         </div>

@@ -8,10 +8,8 @@ import BootstrapIcon from "../assets/skills icons/bootstrap.png";
 import TailwindIcon from "../assets/skills icons/tailwind.png";
 import GitIcon from "../assets/skills icons/git.png";
 import GithubIcon from "../assets/skills icons/github.png";
-
 // projects import
 import project1Img from "../assets/Projects/project1.png";
-
 // certificate import
 import htmlCer from "../assets/certificates/html.png";
 import responsiveCer from "../assets/certificates/responsive_web.png";
@@ -19,6 +17,16 @@ import jsCer from "../assets/certificates/js.png";
 import reactReduxCer from "../assets/certificates/react_redux.png";
 import freeCodeCampIcon from "../assets/icons/freecodecamp.png";
 import sololearnIcon from "../assets/icons/sololearn.png";
+
+
+
+export const NavItems = [
+  { item: "Home", secLink: "home" },
+  { item: "About", secLink: "about" },
+  { item: "Portfolio", secLink: "projects" },
+  { item: "Contact", secLink: "contact" },
+];
+
 
 export const skillsData = [
   { id: 1, skillName: "HTML 5", img: htmlIcon },
@@ -29,10 +37,11 @@ export const skillsData = [
   { id: 6, skillName: "JavaScript", img: JsIcon },
   { id: 7, skillName: "ReactJS", img: ReactIcon },
   { id: 8, skillName: "Redux-Toolkit", img: ReduxIcon },
-
   { id: 9, skillName: "Git", img: GitIcon },
   { id: 10, skillName: "Github", img: GithubIcon },
 ];
+
+
 
 export const projectsData = [
   {
@@ -60,6 +69,8 @@ export const projectsData = [
     repoLink: "https://github.com/sanyamnegi9/Luxe-Vogue",
   },
 ];
+
+
 
 export const coursesData = [
   {
