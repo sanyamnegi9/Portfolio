@@ -31,8 +31,8 @@ const Contact = () => {
           Submit
         </button>
         <div className="links">
-          <FontAwesomeIcon icon={faGithub} size="2xl"  className="link"/>
-          <FontAwesomeIcon icon={faLinkedin} size="2xl" className="link"/>
+          <FontAwesomeIcon icon={faGithub} size="xl"  className="link"/>
+          <FontAwesomeIcon icon={faLinkedin} size="xl" className="link"/>
         </div>
       </form>
     </div>

@@ -17,29 +17,29 @@
 .contact-form {
   width: 90vw;
   max-width: 60rem;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 1rem;
   gap: 1rem;
 }
 
 .contact-input {
   background-color: rgb(40, 40, 40);
   color: white;
+  font-size: 1rem;
   width: 100%;
   max-width: 40rem;
-  border: none;
-  border-radius: .5rem;
   padding: .5rem 1rem;
-  font-size: 1rem;
+  border-radius: .5rem;
+  border: none;
 }
 
 .submit-btn {
-  border-radius: 1rem;
   padding: 1rem 3.5rem;
   margin: 2rem 0;
+  border-radius: 1rem;
 }
 
 .links {
@@ -48,7 +48,6 @@
   gap: 2rem;
 }
 
-.link:hover {
-  // color: $btn-bg;
-  box-shadow: 0 0 15px 4px rgba(241, 241, 14, 0.7);
+.link{
+  cursor: pointer;
 }

@@ -32,11 +32,11 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
-      <Link to="/">
-        <h1 className="logo">Sanyam Negi</h1>
+      <Link to="/" className="logo">
+        Sanyam Negi
       </Link>
       <div className="nav-items">
-        {NavItems.map(({item, secLink}) => (
+        {NavItems.map(({ item, secLink }) => (
           <Link
             activeClass="active"
             spy={true}
@@ -47,14 +47,15 @@ const Navbar = () => {
           >
             {item}
           </Link>
-          
         ))}
       </div>
 
       {/* Resume Button */}
       <button
         className="btn contact-btn"
-        onClick={()=>{window.open(cvImg, "_blank");}}
+        onClick={() => {
+          window.open(cvImg, "_blank");
+        }}
       >
         <FontAwesomeIcon icon={faFile} className="icon" />
         Resume
@@ -86,7 +87,7 @@ const Navbar = () => {
         className="mobile-nav-items"
         style={{ display: showMenu ? "flex" : "none" }}
       >
-        {NavItems.map(({item,secLink}) => (
+        {NavItems.map(({ item, secLink }) => (
           <Link
             activeClass="active"
             spy={true}

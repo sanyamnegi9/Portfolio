@@ -14,7 +14,7 @@ const CourseCard = ({
 }) => {
   return (
     <div className="course-card">
-      <div className="organization-container">
+      <div className="img-container">
         <img src={img} alt={title} className="course-card-img" />
         <p>{organization}</p>
       </div>

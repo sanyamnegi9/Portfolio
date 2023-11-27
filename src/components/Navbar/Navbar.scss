@@ -9,8 +9,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
   padding: 0 3rem;
+  gap: 2rem;
   z-index: 5;
 }
 
@@ -19,6 +19,7 @@ nav {
 }
 
 .logo {
+  font-family: 'Great Vibes', cursive, "serif";
   font-size: 1.8rem;
   letter-spacing: 2.5px;
   color: $btn-bg;

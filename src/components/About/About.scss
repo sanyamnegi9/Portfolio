@@ -38,7 +38,7 @@
   gap: 1.5rem;
 }
 
-.organization-container {
+.img-container {
   width: 9rem;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@
 
 }
 
-.organization-container>p {
+.img-container>p {
   font-size: .8rem;
   font-weight: 400;
 }
@@ -151,7 +151,7 @@
     padding: 1rem;
   }
 
-  .organization-container {
+  .img-container {
     width: 8rem;
   }
 
@@ -185,11 +185,11 @@
     height: 18vw;
   }
 
-  .organization-container>p {
+  .img-container>p {
     font-size: 3.2vw;
   }
 
-  .organization-container {
+  .img-container {
     width: 35vw;
   }
 
