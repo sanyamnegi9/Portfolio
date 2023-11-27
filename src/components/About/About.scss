@@ -1,13 +1,12 @@
 @import "../../styles//abstracts/variables";
 
 
-.about-cont{
+.about-cont {
   gap: 2rem;
 }
 
-
 .courses-container {
-  width: 90%;
+  width: 100%;
   max-width: 60rem;
 }
 
@@ -20,7 +19,7 @@
   justify-content: center;
 }
 
-// Skill Card CSS
+// courses card css
 
 .course-card {
   background-color: rgb(50, 50, 50);
@@ -33,16 +32,58 @@
   gap: 1.5rem;
 }
 
+.organization-container {
+  width: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .2rem;
+
+}
+
+.organization-container>p {
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+
 .course-card-img {
   height: 4.2rem;
 }
 
 
 .course-card-desc {
+  width: 100%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: .5rem;
 }
+
+.course-title {
+  font-size: 1.5rem;
+}
+
+.course-skill {
+  font-size: .7rem;
+  word-spacing: 5px;
+}
+
+
+.course-links {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0 .5rem;
+  gap: 2rem;
+}
+
+.course-links a:hover {
+  cursor: pointer;
+}
+
+// Skill Card CSS
 
 .skill-card-container {
   display: flex;
@@ -63,6 +104,51 @@
 @media (max-width:440px) {
   .skill-card {
     padding: 1rem;
+  }
+
+  .organization-container{
+    width: 8rem;
+  }
+  .course-card-img{
+    height: 3.5rem;
+  }
+
+  .course-title {
+    font-size: 5.5vw;
+  }
+
+  .course-skill {
+    font-size: 3vw;
+  }
+
+  .course-card {
+    gap: 3vw;
+  }
+
+}
+
+
+@media (max-width:370px) {
+  .course-card {
+    justify-content: center;
+    padding: 3vw 4vw;
+  }
+
+  .course-card-img {
+    width: 18vw;
+    height: 18vw;
+  }
+
+  .organization-container>p {
+    font-size: 3.2vw;
+  }
+
+  .organization-container {
+    width: 35vw;
+  }
+
+  .course-links {
+    margin-top: 2vw;
   }
 
 }

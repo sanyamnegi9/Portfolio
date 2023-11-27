@@ -12,6 +12,14 @@ import GithubIcon from "../assets/skills icons/github.png";
 // projects import
 import project1Img from "../assets/Projects/project1.png";
 
+// certificate import
+import htmlCer from "../assets/certificates/html.png";
+import responsiveCer from "../assets/certificates/responsive_web.png";
+import jsCer from "../assets/certificates/js.png";
+import reactReduxCer from "../assets/certificates/react_redux.png";
+import freeCodeCampIcon from "../assets/icons/freecodecamp.png";
+import sololearnIcon from "../assets/icons/sololearn.png";
+
 export const skillsData = [
   { id: 1, skillName: "HTML 5", img: htmlIcon },
   { id: 2, skillName: "CSS", img: CssIcon },
@@ -42,5 +50,54 @@ export const projectsData = [
     desc: "Explore my e-commerce showcase: user-friendly design, seamless navigation, and eye-catching product displays. Experience digital retail elegance in action",
     activeLink: "https://luxe-vogue.netlify.app/",
     repoLink: "https://github.com/sanyamnegi9/Luxe-Vogue",
+  },
+  {
+    id: 3,
+    projectName: "luxe - vogue",
+    img: project1Img,
+    desc: "Explore my e-commerce showcase: user-friendly design, seamless navigation, and eye-catching product displays. Experience digital retail elegance in action",
+    activeLink: "https://luxe-vogue.netlify.app/",
+    repoLink: "https://github.com/sanyamnegi9/Luxe-Vogue",
+  },
+];
+
+export const coursesData = [
+  {
+    id: 1,
+    img: sololearnIcon,
+    courseName: "HTML",
+    organization: "Sololearn",
+    skills: "HTML, HTML5",
+    credentialUrl: "https://www.sololearn.com/certificates/CT-7AWTQ4DM",
+    certificate: htmlCer,
+  },
+  {
+    id: 2,
+    img: sololearnIcon,
+    courseName: "React + Redux",
+    organization: "Sololearn",
+    skills: "Redux.js, React.js",
+    credentialUrl: "https://www.sololearn.com/certificates/CT-NYBMO4EZ",
+    certificate: reactReduxCer,
+  },
+  {
+    id: 3,
+    img: freeCodeCampIcon,
+    courseName: "Responsive Web Design",
+    organization: "freeCodeCamp",
+    skills: "HTML, Cascading Style Sheets (CSS), Responsive Web Design",
+    credentialUrl:
+      "https://www.freecodecamp.org/certification/Sanyamnegi/responsive-web-design",
+    certificate: responsiveCer,
+  },
+  {
+    id: 4,
+    img: freeCodeCampIcon,
+    courseName: "JavaScript Algorithms and Data Structures",
+    organization: "freeCodeCamp",
+    skills: "JavaScript, ES6",
+    credentialUrl:
+      "https://www.freecodecamp.org/certification/Sanyamnegi/javascript-algorithms-and-data-structures",
+    certificate: jsCer,
   },
 ];

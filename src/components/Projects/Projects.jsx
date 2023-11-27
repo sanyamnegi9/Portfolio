@@ -2,6 +2,7 @@ import React from "react";
 import "./Projects.scss";
 import ProjectCard from "./ProjectCard";
 import { projectsData } from "../../data";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -28,7 +29,9 @@ const Projects = () => {
           )
         )}
       </div>
-      {/* <button className="white-btn">See more</button> */}
+      <Link to="/projects">
+        <button className="white-btn">See more</button>
+      </Link>
     </div>
   );
 };
