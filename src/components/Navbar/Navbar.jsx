@@ -31,7 +31,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
+    <nav className={`${scrolled ? "scrolled" : ""}`}>
       <Link to="/" className="logo">
         Sanyam Negi
       </Link>
